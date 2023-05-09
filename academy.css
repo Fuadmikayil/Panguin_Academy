@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient( to right ,#4A494F ,#2C445D);
+}
+button{
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #101828 ;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 99999;
+}
+.nav2{
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav  .icon{
+    width: 50px;
+    padding-top: 10px;
+    height: 50px;
+    line-height: 70px;
+}
+nav  .icon img{
+    width: 100%;
+    line-height: 100%;
+}
+nav ul li{
+    list-style: none;
+    line-height: 70px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+    color: rgb(215, 215, 215);
+}
+nav .menu_sag{
+    display: flex;
+    gap: 20px;
+}
+nav .menu_sag .m_s{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav .menu_sag .m_s .card {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #1570EF;
+    display: flex;
+    justify-content: center;
+
+}
+nav .menu_sag h4{
+    color: white;
+    line-height: 70px;
+    text-align: center;
+}
+nav .menu_sag .m_s .card h5{
+    color: white;
+    margin: auto 0;
+    font-size: 10px;
+}
+nav .menu_sag button{
+    padding: 10px 20px ;
+    background-color: #1570EF ;
+    border-radius: 10px;
+    margin: auto 0;
+    border:0;
+}
+nav .menu_sag button h3{
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
+}
+nav .menu_sag .menu_sag_bar ,.bar2{
+    width: 45px;
+    line-height: 70px;
+    display: none;
+}
+nav .menu_sag .menu_sag_bar   ion-icon ,.bar2{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: none;
+}
+.yuxari{
+    width: 100%;
+    
+}
+.yuxari .yuxari_melumat {
+    width: 80%;
+    padding-top: 100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.yuxari .yuxari_melumat .yuxari_melumat_daxili{
+    width: 600px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.yuxari .yuxari_melumat .yuxari_melumat_daxili h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.yuxari .yuxari_melumat .yuxari_melumat_daxili h3{
+    color: white;
+}
+.yuxari .yuxari_melumat .yuxari_melumat_daxili button{
+    width: 150px;
+    height: 60px ;
+    background-color: #1570EF;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.yuxari .yuxari_melumat .yuxari_melumat_daxili button h4{
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.yuxari .yuxari_melumat .arxafonsekil {
+    height: 600px;
+}
+.yuxari .yuxari_melumat .arxafonsekil img{
+    width: 100%;
+    height: 100%;
+}
+.sirketler{
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.sirketler::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: .3;
+    border-radius: 20px;
+}
+.sirketler .sirketler_logolar{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+    z-index: 999;
+    flex-wrap: wrap;
+}
+.sirketler .sirketler_logolar .sirketler_logolar_sekil{
+    width: calc(100% / 5 - 20px);
+    height: 100%;
+    opacity: .7;
+    cursor: pointer;
+    scale: .8;
+    transition: 1s;
+}
+.sirketler .sirketler_logolar .sirketler_logolar_sekil:hover {
+    opacity: 1;
+    scale: .9;
+}
+.sirketler .sirketler_logolar .sirketler_logolar_sekil img{
+    width: 100% ;
+    height: 100%;
+}
+.orta1{
+    width: 100%;
+    background: #101828;
+    padding-top: 100px;
+}
+.orta{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.orta1 .orta_melumatlar{
+    width: 80%;
+    margin: 100px auto;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.orta1 .orta_melumatlar .orta_melumatlar_divler{
+    width: calc(100% / 4 - 20px);
+    background: linear-gradient( -45deg ,#2C445D,#4A494F );
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 13px;
+    border-radius: 20px;
+}
+.orta1 .orta_melumatlar .orta_melumatlar_divler .iconlar{
+    width: 50px;
+    height: 50px;
+    background: #2E90FA;
+    border-radius: 10px;
+    padding: 5px;
+}
+.orta1 .orta_melumatlar .orta_melumatlar_divler .iconlar ion-icon{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.orta1 .orta_melumatlar .orta_melumatlar_divler h2{
+    width: 100%;
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 15px;
+}
+.orta1 .orta_melumatlar .orta_melumatlar_divler h3{
+    width: 100%;
+    font-size: 1rem;
+    color: grey;
+}
+.orta1 .orta_hisseler{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.orta1 .orta_hisseler .orta_hisseler_daxili{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.orta1 .orta_hisseler .orta_hisseler_daxili .orta_hisseler_daxili_iconlar{
+width: 60px;
+height: 60px;
+background: #D1E9FF;
+border-radius: 50%;
+padding: 10px;
+border: 7px solid white;
+}
+.orta1 .orta_hisseler .orta_hisseler_daxili .orta_hisseler_daxili_iconlar ion-icon{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.orta1 .orta_hisseler  .orta_hisseler_daxili_buttonlar{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.orta1 .orta_hisseler  .orta_hisseler_daxili_buttonlar button{
+    width: 130px;
+    line-height: 45px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    color: gray;
+    font-size: 1rem;
+}
+.orta1 .carusel{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color:#101828;
+    
+}
+.orta1 .carusel .carusel_esas{
+    width: 380px;
+    background:linear-gradient( 130deg ,#969298 ,#8b8d9d ,#5f698e) ;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+#c2{
+    left: 400px;
+}
+#c3{
+    left: 800px;
+}
+#c4{
+    left: 1200px;
+}
+#c5{
+    left: 1600px;
+}
+#c6{
+    left: 2000px;
+}
+.plans{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.orta1 .carusel .carusel_esas .caruselicon{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap:13px;
+}
+.orta1 .carusel .carusel_esas .caruselicon ion-icon{
+    scale: 1.6;
+    color: gold;
+}
+.orta1 .carusel .carusel_esas .caruselmelumat{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 80px;
+}
+.orta1 .carusel .carusel_esas .caruselmelumat h4{
+    font: 1.2rem sans-serif;
+}
+.orta1 .carusel .carusel_esas .caruselprofile{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.orta1 .carusel .carusel_esas .caruselprofile h1{
+    font: 1.2em sans-serif;
+}
+.orta1 .carusel .carusel_esas .caruselprofile h3{
+    font: 1em sans-serif;
+}
+.orta1 .carusel .carusel_esas .caruselprofile .caruselprofile_esas{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+.orta1 .carusel .carusel_esas .caruselprofile .caruselprofile_esas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.orta1 .carusel .carusel_esas .caruselprofile .caruselprofile_esas2{
+    margin-top: 5px;
+}
+.plans .planlar{
+    width: 90%;
+    display: flex;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.plans .planlar .plan1{
+    width: calc(100% / 2 - 20px);
+    background-color: #101828;
+    border-radius: 15px;
+    border: 2px solid #89ACC9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+.plans .planlar .plan1 .plan1_basliq{
+    display: flex;
+    border-bottom: 1px solid rgb(89, 89, 89) ;
+    padding-bottom: 30px;
+    gap:20px;
+    flex-direction: column;
+    
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_esas_melumat{
+    width: 60%;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_esas_melumat h1{
+    color: #fbfbfb;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_esas_melumat h3{
+    color: #848484;
+    text-align: right;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_icon{
+    width: 60px;
+    height: 60px;
+    background: #D1E9FF;
+    border: 7px solid white;
+    border-radius: 50%;
+    padding: 7px;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_icon ion-icon{
+    width: 100%;
+    height: 100%;
+    color: #1570EF;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq2 h1{
+    color: #1262EF;
+    font-size: 1.7rem;
+}
+.plans .planlar .plan1 .plan1_basliq .plan1_basliq2   h3{
+    color: rgb(255, 255, 255);
+}
+.plans .planlar .plan1 .plan2_basliq{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.plans .planlar .plan1 .plan2_basliq .plan2_basliq_melumatlar{
+    width: calc(100% / 2);
+    display: flex;
+    padding-top: 30px;
+    gap: 10px;
+}
+.plans .planlar .plan1 .plan2_basliq .plan2_basliq_melumatlar .plan2_basliq_melumatlar_icon{
+    width: 25px;
+    height: 25px;
+    background-color: #D1FAE0;
+    border-radius: 50%;
+    padding: 2px;
+}
+.plans .planlar .plan1 .plan2_basliq .plan2_basliq_melumatlar .plan2_basliq_melumatlar_icon ion-icon{
+    width: 100%;
+    height: 100%;
+    color: forestgreen;
+}
+.plans .planlar .plan1 button{
+    width: 100%;
+    height: 50px;
+    background-color: #1570EF;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 0;
+
+}
+.plans .planlar .pl2{
+    border: 0;
+}
+footer{
+    width: 100%;
+    background-color: #101828;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer .asagı1{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+footer .asagı1 .asagı1_Daxili{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+footer .asagı1 .asagı1_Daxili .iconic{
+    width: 60px;
+    height: 60px;
+
+}
+footer .asagı1 .asagı1_Daxili .iconic img{
+    width: 100%;
+    height: 100%;
+}
+footer .asagı1 .asagı1_Daxili ul{
+    display: flex;
+    gap: 10px;
+}
+footer .asagı1 .asagı1_Daxili ul li{
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+footer .asagı1 .asagı1_Daxili ul li:hover{
+    color: #6b7070;
+}
+footer .asagı1 .asagı1_input{
+    display: flex;
+    gap: 10px;
+}
+footer .asagı1 .asagı1_input input{
+    border: 1px solid white;
+    background-color: #6b7070;
+    border-radius: 10px;
+    height: 45px;
+    width: 200px;
+    outline: 0;
+    color: white;
+    padding-left: 10px;
+}
+footer .asagı1 .asagı1_input input::placeholder{
+    color: rgb(175, 172, 172);
+}
+footer .asagı1 .asagı1_input input:focus{
+    border-color: #1570EF;
+}
+footer .asagı1 .asagı1_input button{
+    width: 100px;
+    border-radius: 10px;
+    height: 45px;
+    background-color: #175CD3;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+}
+footer .asagı2{
+    width: 70%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+@media (max-width:1024px) {
+    .orta1 .orta_melumatlar .orta_melumatlar_divler{
+        width: calc(100% / 2 - 20px);
+    }
+    .orta1 .orta_hisseler .orta_hisseler_daxili{
+        width: calc(100% / 2);
+    }
+    .plans .planlar .plan1{
+        width: 100% ;
+    }
+    .sirketler{
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+    }
+    .sirketler .sirketler_logolar .sirketler_logolar_sekil{
+        width: calc(100% / 2 - 20px);
+        scale: .5;
+    }
+    .sirketler .sirketler_logolar .sirketler_logolar_sekil:hover {
+        scale: .6;
+    }
+    footer .asagı1 .asagı1_Daxili ul {
+       flex-direction: column;
+    }
+    footer .asagı1 .asagı1_input{
+        flex-direction: column;
+    }
+    .plans .planlar{
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width:768px){
+    .yuxari .yuxari_melumat{
+        flex-direction: column;
+        width: 90%;
+    }
+    .yuxari .yuxari_melumat .yuxari_melumat_daxili{
+        width: 100%;
+    }
+    nav{
+        padding: 0 20px;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    .nav2{
+        padding: 0 10px;
+        height: 100vh;
+        margin-top: 70px;
+        background-color: #101828;
+        display: none;
+    }
+    .ul2{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    .ul2 li{
+        line-height: 40px;
+    }
+    nav .menu_sag .menu_sag_bar{
+        display: inline-block;
+    }
+    nav .menu_sag .menu_sag_bar ion-icon{
+        display: inline-block;
+    }
+    nav .menu_sag .bar2{
+        display: none;
+    }
+    .orta1 .orta_hisseler .orta_hisseler_daxili{
+        width: 100% ;
+    }
+    .plans .planlar .plan1 .plan2_basliq {
+        overflow-x: auto ;
+        height: 150px;
+    }
+    .plans .planlar .plan1 .plan2_basliq .plan2_basliq_melumatlar{
+        width: 100%;
+    }
+    
+    footer .asagı1 , .asagı2{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .yuxari .yuxari_melumat .arxafonsekil{
+        height: 400px;
+        width: 70%;
+    }
+    
+
+}
+@media (max-width:426px) {
+    .yuxari .yuxari_melumat{
+        width: 90%;
+    }
+    .orta1 .orta_melumatlar .orta_melumatlar_divler{
+        width: 100% ;
+    }
+    .sirketler .sirketler_logolar .sirketler_logolar_sekil{
+        width: 100% ;
+    }
+    .plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_esas_melumat h1{
+        font-size: 1rem;
+    }
+    .plans .planlar .plan1 button{
+        margin: 0;
+        height: 40px;
+        width: 70%;
+        margin:  0 auto;
+    }
+    .plans .planlar .plan1 .plan1_basliq{
+        padding-bottom:10px ;
+    }
+    .plans .planlar .plan1{
+        gap: 10px;
+    }
+    .h1yazi{
+        font-size: 1.4rem ;
+    }
+    .plans .planlar .plan1 .plan1_basliq .plan1_basliq2 h1 ,h3{
+        font-size: 1rem;
+    }
+    .plans .planlar .plan1 button h2{
+        font-size: 1rem;
+    }
+    .plans .planlar .plan1 .plan1_basliq .plan1_basliq_esas .plan1_basliq_icon{
+        width: 50px;
+        height: 50px;
+    }
+    footer .asagı1   {
+        width: 90%;
+    }
+    footer .asagı2{
+        width: 90%;
+    }
+    .yuxari .yuxari_melumat .arxafonsekil{
+        width: 100%;
+    }
+}
+@media (max-width:348px){
+    .yuxari .yuxari_melumat .yuxari_melumat_daxili h1{
+        font-size: 2rem;
+    }
+    nav .menu_sag button{
+        padding: 10px 10px;
+    }
+    nav .menu_sag button h3{
+        font-size: .8rem;
+    }
+}
